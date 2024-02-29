@@ -1,7 +1,8 @@
 Teknik:
 Öğrenci kayıt işlemini kullanıcıdan alınan dinamik verilerle yapıldı.
 localhost:3000/student/add/{name}/{age}/{midterm-grade}/{final-grade} gibi bir yol izlendi.
-İşlem sırasında midterm-grade ve final-grade in avarage'i alındı ve browserda gösterildi.
+İşlem sırasında midterm-grade ve final-grade in 
+average'i alındı ve browserda gösterildi.
 
 Bizden istenilenler bu şekildeydi.
 
