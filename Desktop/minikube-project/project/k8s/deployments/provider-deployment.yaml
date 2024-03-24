@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: provider-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: provider
+  template:
+    metadata:
+      labels:
+        app: provider
+    spec:
+      containers:
+        - name: provider
+          image: your_provider_image:v1.0  # Gerçek Docker imaj adınızı ve sürüm numaranızı buraya ekleyin
+          ports:
+            - containerPort: 80
+
+

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - name: client
+          image: your_client_image
+          ports:
+            - containerPort: 80
+          env:
+            - name: RABBITMQ_HOST
+              value: rabbitmq-service
+            - name: MYSQL_HOST
+              value: mysql-service
