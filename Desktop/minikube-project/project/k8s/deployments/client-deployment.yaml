@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: your_client_image
+          image: client-image:v1
           ports:
             - containerPort: 80
           env:

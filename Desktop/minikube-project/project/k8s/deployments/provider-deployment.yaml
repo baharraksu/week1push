@@ -6,16 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: provider
+      app: provider-app
   template:
     metadata:
       labels:
-        app: provider
+        app: provider-app
     spec:
       containers:
-        - name: provider
-          image: your_provider_image:v1.0  # Gerçek Docker imaj adınızı ve sürüm numaranızı buraya ekleyin
+        - name: provider-deployment
+          image: provider-image:v1
           ports:
-            - containerPort: 80
-
-
+            - containerPort: 3000

@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: minikube-project
-        image: minikube-project:v1
+        image: client-image:v1
         ports:
         - containerPort: 3000
